@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/buy_pc.css">
+    <link rel="stylesheet" href="/public/css/menu.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <link rel="shortcut icon" href="/public/favico/favico.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/public/scripts/buy_pc.js"></script>
+    <title>Купить ПК</title>
+</head>
+<body>
+    <%- include ('blocks/menu') -%>
+ 
+    <div class="line_pc_img">
+        <div class="liner">
+            <div class="img_card">
+                <p class="sel_zakaz">Сделать заказ</p>
+                <img src="/public/svg/up_arrow.svg" class="under_st">
+            </div>
+            <div class="img_card">
+                <p id="href_about">Всю информацию о нашей компании вы сможете узнать здесь</p>
+            </div>
+            <div class="img_card">
+                <p id="href_index">Информация о доставке</p>
+            </div>
+            <div class="img_card"></div>
+            <div class="img_card"></div>
+        </div>
+        <span id="left_img"></span>
+        <span id="right_img"></span>
+    </div>
+
+    <div class="buy_pc_wrapper">
+        <p class="label_form">Оформление заказа</p>
+
+        <!-- MEDIA FORM -->
+            <form action="/buy_pc" method="post" class="media_form">
+                <img src="/public/svg/pehat.svg" class="shtamp">
+                <div class="up_block_form">
+                    <div>
+                        <input type="text" name="fio" required placeholder="ФИО">
+                    </div>
+                    <div>
+                        <input type="tel" required placeholder="Тел." name="tel">
+                        <input type="email" required placeholder="Почта" name="email">
+                    </div>
+                </div>
+                <div class="under_block_form">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        <!-- -->
+
+        <form action="/buy_pc" method="post" class="general_form">
+            <div>
+                <input type="text" name="fio" required placeholder="ЗАПОЛНИТЬ">
+                <input type="tel" name="tel" required placeholder="ЗАПОЛНИТЬ">
+                <input type="email" name="email" required placeholder="ЗАПОЛНИТЬ">
+            </div>
+            <div>
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
+    <%- include('blocks/footer') -%>
+</body>
+</html>

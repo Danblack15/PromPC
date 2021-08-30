@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/menu.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <link rel="shortcut icon" href="/public/favico/favico.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/public/scripts/index.js"></script>
+    <title>ПромПК</title>
+</head>
+<body>
+    <header>
+        <div class="menu_wrapper">
+            <ul>
+                <a href="/"><li>Главная</li></a>
+                <a href="/buy_pc"><li>Заказать</li></a>
+                <a id="dostav"><li>Доставка</li></a>
+            </ul>
+        </div>  
+        <div class="name_company_header">
+            <p>Пром<span class="bold_pc">ПК</span></p>
+            <p>Правильные компьютеры у нас</p>
+        </div>
+        <div class="buy_pc_wrapper">
+            <input type="button" value="Сделать заказ">
+        </div>
+    </header>
+    <div class="content">
+        <%- include ('blocks/menu') -%>
+        <div class="osn_content">
+           <div class="block_1">
+                <p class="name_wrapper_pc_info">Наш продукт</p>
+                <div class="wrapper_pc_info">
+                    <div class="img_pc_info">
+                        <span id="left_img"></span>
+                        <img src="https://pbs.twimg.com/media/EHB--hYX4AY71lo.jpg" id="img_info_1">
+                        <img src="https://www.mikedobrien.com/wp-content/uploads/2016/05/cropped-Contact_Inbound-Marketing_Mike-D.-OBrien.jpg" id="img_info_2">
+                        <img src="https://im0-tub-ru.yandex.net/i?id=8451ce0695bcec3f1b5f92f72ff40ee1-l&n=13" id="img_info_3">
+                        <img src="https://i.pinimg.com/736x/ef/23/cb/ef23cb338ead7cf6de4629a10f51e17c.jpg">
+                        <span id="right_img"></span>
+                    </div>
+                    <div class="modal_pc_podrob">
+                        <div class="dop_info_pc_modal">
+                            <p></p>
+                        </div>
+                        <div class="header_modal_info_pc">
+                            <div>
+                                <p>Характеристики <span class="name_pc_modal">PromXXL PC</span></p>
+                            </div>
+                            <div>
+                                <span id="close_modal_pc_info">
+                                    <img src="/public/svg/close_modal.svg">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="wrapper_info_pc">
+                            <div class="wrapper_info_pc_block">
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">CPU</p>
+                                    <p class="dop_info_compl">AMD Ryzen 5 2600X </p>
+                                </div>
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">HDD</p>
+                                    <p class="dop_info_compl">...</p>
+                                </div>
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">Блок питания</p>
+                                    <p class="dop_info_compl">Chieftec APS-650CB</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_info_pc_block">
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">GPU</p>
+                                    <p class="dop_info_compl">ASUS GeForce® GT 1030 OC Phoenix</p>
+                                </div>
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">SSD</p>
+                                    <p class="dop_info_compl">Transcend TS512GSSD370S</p>
+                                </div>
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">Корпус</p>
+                                    <p class="dop_info_compl">Chieftec HQ-01B-OP</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_info_pc_block">
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">RAM</p>
+                                    <p class="dop_info_compl">Transcend JM2666HLB-8G</p>
+                                </div>
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">Мат. плата</p>
+                                    <p class="dop_info_compl">ASUS PRIME A320M-K</p>
+                                </div>
+                                <div class="hover_block_modal">
+                                    <p class="name_compl">Куллеры</p>
+                                    <p class="dop_info_compl">AMD AMD Wraith Spire cooler AM4 / Chieftec AF-0925S / Chieftec AF-0825S</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy_pc_modal">
+                            <input type="button" value="Сделать заказ">
+                        </div>
+                    </div>
+                    <div class="pc_info">
+                        
+                        <p class="
+                        name_pc">
+                            PromXXL PC <span class="podrobnee">подробнее</span>
+                        </p>
+                        <p class="name_pc_info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti placeat quas quaerat. Consectetur beatae, quo, sunt est quos unde repudiandae quia expedita aliquam, mollitia harum esse modi! Possimus exercitationem quo dolore debitis hic ullam deserunt reprehenderit, veritatis eius earum velit rem impedit quam aliquid voluptatibus aliquam, veniam asperiores iusto ipsam sint explicabo dolorum. Id, reiciendis est error ab non placeat veniam tempora asperiores accusantium! Laudantium culpa voluptates blanditiis. Atque laborum, enim voluptatem dolor ducimus numquam facilis debitis deserunt iusto repellat nemo magnam, pariatur nihil neque accusantium consectetur adipisci nobis minus exercitationem est dicta. Reiciendis ipsam, est optio iusto ullam nisi.
+                        </p>
+                        
+                    </div>
+                </div>
+           </div>
+           <div class="insert_info_us">
+               <div class="enter_info_us">
+                    <p class="quest_info_us">Кто мы?</p>
+                </div>
+           </div>
+           <div class="dostavka">
+                <p class="name_dostavka">Информация о доставке</p>
+                <div class="background_dostavka">
+
+                </div>
+                <div class="info_dostavka">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facilis voluptate, dignissimos dicta facere voluptatem hic delectus fugit et maiores vero distinctio reiciendis enim culpa est quam ab quidem dolore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maiores vero debitis fugiat modi deleniti veniam est molestiae architecto, quae ratione quam assumenda nostrum explicabo eveniet doloribus optio quidem tempore natus harum cum laboriosam facere.</p>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <%- include('blocks/footer') -%>
+</body>
+</html>

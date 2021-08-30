@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    font-family: 'Arimo', sans-serif;
+}
+.wrapepr_text{
+    max-width: 100vw;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+}
+.wrapepr_text p:nth-child(1){
+    font-size: 50px;
+    color: #507699;
+}
+.wrapepr_text p:nth-child(2){
+    font-size: 22px;
+    margin-top: 25px;
+}
+.wrapepr_text img{
+    position: absolute;
+    width: 400px;
+    top: 70px;
+}
+.wrapepr_text input{
+    font-size: 23px;
+    padding: 9px 11px;
+    border-radius: 5px;
+    border: 0px solid black;
+    background-color: #507699;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.1s ease background;
+    box-shadow: 0px 0px 10px 0px #507699;
+}
+.wrapepr_text input:hover{
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px black;
+    transition: 0.1s ease;
+}
+
+
+@media (max-width: 700px) {
+    .wrapepr_text img{
+        width: 350px;
+    }
+    .wrapepr_text p:nth-child(2){
+        padding: 0 25px;
+    }
+    .wrapepr_text p:nth-child(1){
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 380px) {
+    .wrapepr_text p:nth-child(1){
+        font-size: 38px;
+    }
+    .wrapepr_text img{
+        width: 80vw;
+    }
+    .wrapepr_text p:nth-child(2){
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+    overflow-x: hidden;
+}
+.line_pc_img{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 100px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+.liner{
+    display: flex;
+    transition: 0.3s ease-in-out;
+}
+.img_card{
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 30px;
+    color: #507699;
+    line-height: 40px;
+}
+.img_card p{
+    background: black;
+    border-radius: 5px;
+    max-width: 37%;
+    color: white;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    cursor: pointer;
+    z-index: 5555;
+    transition: 0.1s;
+    text-align: center;
+}
+.img_card p:hover{
+    background: #507699;
+    color: white;
+    transition: 0.1s;
+}
+.img_card img{
+    width: 25px;
+    z-index: 5555;
+    cursor: pointer;
+    margin-bottom: 40px;
+    background: black;
+    border-radius: 50%;
+    padding: 7px;
+    transition: 0.1s ease;
+}
+.img_card img:hover{
+    transform: translateY(5px);
+    background: #507699;
+    transition: 0.1s ease;
+}
+    /*Слайды*/
+.img_card:nth-child(1){
+    background-image: url('http://prp-chrzanow.pl/images/rodzinna/slider/2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_card:nth-child(2){
+    background-image: url('https://ulbc.lu/wp-content/uploads/2019/05/ict-ulbc-cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_card:nth-child(3){
+    background-image: url('https://www.crotonesviluppo.it/wp-content/uploads/2018/07/eipass.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_card:nth-child(4){
+    background-image: url('https://www.blukii.com/wp-content/uploads/contact-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_card:nth-child(5){
+    background-image: url('https://www.db.by/upload/iblock/a4a/sl_main_bg-_2_.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#left_img{
+    position: absolute;
+    height: inherit;
+    width: 30%;
+    left: 0;
+    cursor: pointer;
+    transition: 0.1s;
+    z-index: 55;
+}
+#left_img:hover{
+    background-color: #50769959;
+    transition: 0.1s;
+}
+#right_img{
+    position: absolute;
+    height: inherit;
+    width: 70%;
+    right: 0;
+    cursor: pointer;
+    z-index: 55;
+}
+.buy_pc_wrapper{
+    max-width: 100vw;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label_form{
+    font-size: 45px;
+    
+}
+
+/*MEDIA FORM*/
+.media_form{
+    width: 85%;
+    height: 400px;
+    padding: 25px;
+    border: 1px solid #507699;
+    box-shadow: 0px 0px 50px 0px #50769997;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    display: none;
+}
+.up_block_form input{
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 7px;
+    z-index: 5;
+}
+.up_block_form{
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.up_block_form input{
+    margin: 15px 70px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #0000005e;
+    box-sizing: border-box;
+    transition: 0.1s ease;
+}
+.up_block_form input:focus{
+    border: 1px solid #507699;
+    box-shadow: 0px 0px 5px 0px #507699;
+    transition: 0.1s ease;
+}
+.up_block_form div{
+    display: flex;
+    flex-direction: column;
+}
+.under_block_form{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.under_block_form input{
+    margin-right: 110px;
+    padding: 7px 9px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #507699;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
+    z-index: 55;
+}
+.under_block_form input:hover{
+    background: black;
+    transition: 0.1s ease;
+}
+.shtamp{
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%) rotate(25deg);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+
+
+.sel_zakaz:hover + .under_st{
+    transform: translateY(10px);
+    background: #507699;
+    transition: 0.1s ease;
+}
+.general_form{
+    width: 1276px;
+    height: 686px;
+    background-image: url('/public/img/shtamp1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #507699;
+    margin: 70px 0;
+    box-shadow: 0px 10px 30px 15px #00000058;
+}
+.general_form div:nth-child(1){
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.general_form div:nth-child(1) input{
+    width: 400px;
+    height: 30px;
+    font-size: 23px;
+    margin: 7px 0;
+    margin-left: 150px;
+    padding-left: 7px;
+    border: 2px solid white;
+    outline: none;
+    font-weight: 600;
+}
+.general_form div:nth-child(1) input::-webkit-input-placeholder {color:#507699;}
+.general_form div:nth-child(1) input::-moz-placeholder          {color:#507699;}
+.general_form div:nth-child(1) input:-moz-placeholder           {color:#507699;}
+.general_form div:nth-child(1) input:-ms-input-placeholder      {color:#507699;}
+
+
+.general_form div:nth-child(1) input:nth-child(1){
+    margin-top: 90px;
+    margin-left: 110px;
+}
+.general_form div:nth-child(2){
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.general_form div:nth-child(2) input{
+    width: 227px;
+    height: 44px;
+    margin-right: 296px;
+    margin-top: 53px;
+    font-size: 25px;
+    cursor: pointer;
+    background: #507699;
+    color: white;
+    outline: none;
+    border: none;
+}
+.general_form div:nth-child(2) input:hover{
+    background: black;
+}
+
+
+@media (max-width: 1300px) {
+    .general_form{
+        display: none;
+    }
+    .media_form{
+        display: block;
+        position: relative;
+    }
+    .shtamp{
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%) rotate(25deg);
+        top: 25%;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .line_pc_img{
+        overflow: hidden;
+    }
+    .img_card{
+        font-size: 2vw;
+        line-height: 20px;
+    }
+    .img_card img{
+        width: 2vw;
+    }
+}
+
+@media (max-width: 880px) {
+    .media_form{
+        max-width: 100%;
+    }
+    .up_block_form input{
+        width: 200px;
+        height: 50px;
+    }
+    .img_card{
+        font-size: 3vw;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .up_block_form input{
+        margin: 15px 0vw;
+        font-size: 13px;
+    }
+    .up_block_form{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .media_form{
+        height: 300px;
+    }
+    .shtamp{
+        top: 10%;
+        width: 220px;
+    }
+    .line_pc_img{
+        height: 400px;
+    }
+    .img_card img{
+        width: 4vw;
+    }
+    
+}
+
+@media (max-width: 460px) {
+    .label_form{
+        font-size: 9vw;
+    }
+    .img_card{
+        font-size: 4vw;
+    }
+}
